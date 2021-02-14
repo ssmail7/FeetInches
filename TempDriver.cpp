@@ -1,26 +1,37 @@
-//***************************************************************
+//**************************************************************
 // Written by Steven Smail for COP3331
 //
 // TempDriver.cpp (Project 6)
 //
 // This is the driver program that tests the FeetInches class
 // with function templates and operator overloads.
-//***************************************************************
-#include <iostream>
-#include <string>#include "FeetInches.h"using namespace std;template <class T>T minimum(T a, T b)
+//**************************************************************
+
+#include <iostream>
+#include <string>
+#include "FeetInches.h"
+using namespace std;
+
+template <class T>
+T minimum(T a, T b)
 {
   if(a < b)
     return a;
   else
     return b;
-}template <class T>T maximum(T a, T b)
+}
+
+template <class T>
+T maximum(T a, T b)
 {
   if(a > b)
     return a;
   else
     return b;
 }
-int main(){
+
+int main()
+{
   int firstInt, secondInt;
   double firstDouble, secondDouble;
   string firstString, secondString;
